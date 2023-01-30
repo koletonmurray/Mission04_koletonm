@@ -1,0 +1,83 @@
+﻿<!--
+    Created by: Koleton Murray
+    Mission 4 - Grade Calculator
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Mission 4 - Grade Calculator</title>
+
+        <!-- Adds an icon in the tab bar for my site-->
+        <link rel="icon" href="img/book-stack.png">
+
+        <!-- Adds the bootstrap and then my own css to style my site -->
+        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/myStyle.css" rel="stylesheet" />
+
+    </head>
+    <body>
+        <!-- Info about me and IS -->
+        <h1>Koleton Murray</h1>
+        <br />
+        <img src="img/IMG_0699.jpg" title="Koleton loves hiking!" />
+        <br /><br />
+        <p>IS 413 is going to be a great class! I'm really excited to get exposure to C#. Learning a strongly typed language will be good for me in the long run even if it is a bit frustrating. I'm also excited to work within the ASP.NET framework. I think it will be great experience to make me an even more well rounded programmer.</p>
+        <br />
+        <h3>My top 3 post-graduation job fields:</h3>
+        <ul>
+            <li>Development</li>
+            <li>Analytics</li>
+            <li>Secruity</li>
+        </ul>
+        <br />
+
+        <!-- Grade Calculator form -->
+        <h1>Grade Calculator</h1>
+        <br />
+        <p>
+            Please enter the percentage scored for each grade category in the form below<br />
+            For example: 95
+        </p>
+        <form>
+            <label>Assignments: </label>
+            <input type="number" min="0" id="assignments" /><br />
+
+            <label>Group Project: </label>
+            <input type="number" min="0" id="group" /><br />
+
+            <label>Quizzes: </label>
+            <input type="number" min="0" id="quizzes" /><br />
+
+            <label>Midterm Exam: </label>
+            <input type="number" min="0" id="midterm" /><br />
+
+            <label>FinalExam: </label>
+            <input type="number" min="0" id="final" /><br />
+
+            <label>INTEX: </label>
+            <input type="number" min="0" id="intex" /><br />
+            <br />
+
+            <input style="width: 250px;" type="button" id="btnSend" value="Calculate My Grade" /> <br /> <br />
+
+            <div style="font-size: 20px; font-weight: 700;">
+                <label>Your Grade: </label>
+                <label style="width: 50px;" id="letterGrade"></label>
+                <label style="width: 50px;" id="percentGrade"></label>
+            </div>
+        </form>
+
+        <br /><br /><br /><br /><br />
+
+        <!-- Credit the icon author so I don't get in trouble -->
+        <a href="https://www.flaticon.com/free-icons/book" title="book icons">Book icons created by Freepik - Flaticon</a>
+
+        <!-- js scripts to work with bootstrap and then work with the form to calcualte the grade -->
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+        <script src="js/calculator.js"></script>
+
+    </body>
+</html>
