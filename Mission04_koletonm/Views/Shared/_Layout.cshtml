@@ -1,0 +1,39 @@
+﻿<!--
+    Created by: Koleton Murray
+    Mission  - Grade Calculator to MVC
+-->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+
+    <!-- Adds an icon in the tab bar for my site-->
+    <link rel="icon" href="~/img/book-stack.png">
+
+    <!-- Adds the bootstrap and then my own css to style my site -->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/myStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <a asp-controller="Grades" asp-action="Index">Home (About Me)</a>
+        <a asp-controller="Grades" asp-action="GradeCalc">Grade Calculator</a>
+    </nav>
+    <br />
+    <div>
+        @RenderBody()
+    </div>
+
+    <!-- Credit the icon author so I don't get in trouble -->
+    <a href="https://www.flaticon.com/free-icons/book" title="book icons">Book icons created by Freepik - Flaticon</a>
+
+    <!-- js scripts to work with bootstrap and then work with the form to calcualte the grade -->
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="~/js/calculator.js"></script>
+</body>
+</html>

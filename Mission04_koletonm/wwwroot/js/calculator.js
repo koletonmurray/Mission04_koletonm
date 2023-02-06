@@ -49,6 +49,5 @@
         letterGrade = "E";
     }
 
-    $("#percentGrade").text(percentGrade.toString());
-    $("#letterGrade").text(letterGrade);
+    alert("Your Letter Grade:    " + letterGrade + "\nYour Numeric Grade: " + percentGrade.toString() + "%");
 })
